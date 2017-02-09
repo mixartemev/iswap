@@ -23,8 +23,11 @@ use yii\web\IdentityInterface;
  */
 class User extends ActiveRecord implements IdentityInterface
 {
-    const STATUS_DELETED = 0;
-    const STATUS_ACTIVE = 10;
+	//////Кроме двух новых статусов все ориджнал
+	const STATUS_DELETED = 0;
+	const STATUS_WAIT = 1;
+	const STATUS_ACTIVE = 2;
+	const STATUS_ADMIN = 3;
 
 
     /**
